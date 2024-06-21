@@ -35,22 +35,23 @@ iframe {
 /* Defining each section background and styles
 * --------------------------------------- */
 #slide0 {
-  background-image: url(../images/DSC_3523.jpg);
+  background-image: url(../images/tinwong-roast-pork-charsiu-stock.jpg);
+  background-position: top center;
 }
 #slide1 {
-  background-image: url(../images/DSC_3526.jpg);
+  background-image: url(../images/tinwong-wonton-noodle-stock.jpg);
 }
 #slide2 {
-  background-image: url(../images/DSC_3544.jpg);
+  background-image: url(../images/tinwong-congee-stock.jpg);
 }
 #slide3 {
-  background-image: url(../images/DSC_3602.jpg);
+  background-image: url(../images/tinwong-charsiu-stock.jpg);
 }
 #slide4 {
-  background-image: url(../images/DSC_3614.jpg);
+  background-image: url(../images/tinwong-fried-rice-stock.jpg);
 }
 #slide5 {
-  background-image: url(../images/DSC_3653.jpg);
+  background-image: url(../images/tinwong-curry-rice-stock.jpg);
 }
 #slide6 {
   background-image: url(../images/DSC_3691.jpg);
