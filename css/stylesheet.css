@@ -49,6 +49,7 @@ iframe {
 }
 #slide4 {
   background-image: url(../images/tinwong-fried-rice-stock.jpg);
+  background-position: top center;
 }
 #slide5 {
   background-image: url(../images/tinwong-curry-rice-stock.jpg);
@@ -152,7 +153,7 @@ iframe {
 }
 
 #location p {
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .map {
@@ -198,6 +199,8 @@ iframe {
   line-height: 40px;
   text-align: center;
 }
+
+.svg-inline--fa.fa-lg { display: inline-block; vertical-align: middle; }
 
 @media (max-width: 400px) {
   #top-bar {font-size: 70%;}
