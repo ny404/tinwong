@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 3em; }
-h2 { font-size: 1.6em; }
+h2 { font-size: 1.4em; line-height: 1em; margin-bottom: 1em;}
 
 header {
   position: absolute;
@@ -99,8 +99,9 @@ ul.tabs {
   flex-wrap: nowrap;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;  /* Firefox */
+  scrollbar-width: thin;  /* Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-color: #992b10 #e6e6e6;
 }
 
 ul.tabs li {
@@ -114,9 +115,9 @@ ul.tabs li {
   .description {display: none;}
 }
 
-#panel1, #panel2, #panel3, #panel4 {
+/*#panel1, #panel2, #panel3, #panel4 {
   overflow: hidden;
-}
+}*/
 
 #menus h1 {
   text-align: center;
@@ -141,6 +142,8 @@ ul.tabs li {
     margin: 3%;
     position: relative;
   }
+
+  ul.tabs { scrollbar-width:none; }
 }
 
 .tabs-title a, .tabs-title a:hover {
@@ -148,7 +151,7 @@ ul.tabs li {
 }
 
 .section-desc {
-  font-size: 1.25rem;  
+  font-size: 0.75em;  
 }
 
 .item {
@@ -224,6 +227,7 @@ ul.tabs li {
 }
 
 .svg-inline--fa.fa-lg { display: inline-block; vertical-align: middle; }
+.spicy { color: #992b10; }
 
 @media (max-width: 400px) {
   #top-bar {font-size: 70%;}
