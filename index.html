@@ -65,7 +65,12 @@
   <div class="section fp-auto-height" id="section1">
     <div class="row" id="menus">
       <h1>MENU</h1>
-      <nav role="navigation">
+      <nav class="tabs-container" role="navigation">
+        <button class="left-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
+          </svg>
+        </button>
         <ul class="tabs" data-tabs id="example-tabs" role="tablist">
           <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">STEAMED RICE CREPES</a></li>
           <li class="tabs-title"><a href="#panel2">CONGEE</a></li>
@@ -83,6 +88,11 @@
           <li class="tabs-title"><a href="#panel14">SEAFOOD</a></li>
           <li class="tabs-title"><a href="#panel15">VEGETABLE</a></li>
         </ul>
+        <button class="right-arrow is-active">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
+          </svg>
+        </button>
       </nav>
       <div class="tabs-content" data-tabs-content="example-tabs">
         <div class="tabs-panel is-active" id="panel1">
@@ -1363,6 +1373,7 @@
 <script src="js/foundation.js"></script>
 <script src="js/jquery.fullpage.js"></script>
 <script src="js/app.js"></script>
+<script src="js/tabslist.js"></script>
 <script src="js/modal.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" crossorigin="anonymous"></script>
 <!-- <script type="text/javascript">

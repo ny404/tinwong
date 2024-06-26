@@ -90,25 +90,66 @@ iframe {
   padding: 10px 25px 0px 25px;
 }
 
-ul.tabs {
+.tabs-container {
   max-width: 1366px;
   width: 100%;
   padding: 0;
   margin: auto;
+  position: relative;
+}
+
+ul.tabs {
   display: flex; 
   flex-wrap: nowrap;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;  /* Firefox */
+  scrollbar-width: none;  /* Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-color: #992b10 #e6e6e6;
+  /*scrollbar-color: #992b10 #e6e6e6;*/
+  scroll-behavior: smooth;
 }
+
+ul.tabs::-webkit-scrollbar { display: none; }
 
 ul.tabs li {
   flex: 0 0 auto;
   display: inline-block;
   padding: 0;
 }
+
+.tabs-container svg {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: pointer;
+  color: #992b10;
+}
+
+.tabs-container .left-arrow, .tabs-container .right-arrow {
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  padding: 0 12px;
+  display: none;
+  align-items: center;
+}
+
+.tabs-container .left-arrow {
+  background: linear-gradient(to right, #e6e6e6 25%, transparent);
+}
+
+.tabs-container .right-arrow {
+  right: 0;
+  justify-content: flex-end;
+  background: linear-gradient(to left, #e6e6e6 25%, transparent);
+}
+
+.tabs-container svg:hover {
+  opacity: 0.8;
+}
+
+.tabs-container .left-arrow.is-active, .tabs-container .right-arrow.is-active { display: flex; }
 
 @media (max-width: 400px) {
 
@@ -142,8 +183,6 @@ ul.tabs li {
     margin: 3%;
     position: relative;
   }
-
-  ul.tabs { scrollbar-width:none; }
 }
 
 .tabs-title a, .tabs-title a:hover {
